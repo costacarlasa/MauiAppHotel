@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource White}">
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                                Padding="10">
+
+        <Frame BackgroundColor="{StaticResource SecondaryDarkText}">
+            <Label Text="SOBRE O APP"
+                       FontFamily="Montserrat"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Secondary}">
+                    </Label>
+            </Frame>
+
+            <Label Text="Aplicativo desenvolvido como uma plataforma para realizar reservas de hospedagem em hoteis"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Montserrat"
+                   VerticalTextAlignment="Center"
+                   Padding="20">
+            </Label>
+
+
+
+            <Label Text="DESENVOLVEDOR: Carla Costa"
+                       FontFamily="Montserrat"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Padding="30">
+                </Label>
+
+                <Label Text="maio 2025"
+                       HorizontalTextAlignment="Center"
+                       FontFamily="Montserrat"
+                       VerticalTextAlignment="Center"
+                       Padding="20">
+                </Label>
+
+        <Button Padding="10"
+                Margin="10"
+                Text="Voltar">
+        </Button>
+    </VerticalStackLayout>
+
+
+    
+</ContentPage>
