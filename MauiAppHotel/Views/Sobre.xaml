@@ -47,8 +47,10 @@
 
         <Button Padding="10"
                 Margin="10"
-                Text="Voltar">
-        </Button>
+                Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+
     </VerticalStackLayout>
 
 
