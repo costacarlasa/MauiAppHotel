@@ -11,8 +11,6 @@
     <VerticalStackLayout VerticalOptions="CenterAndExpand"  
                          Padding="10">
 
-        <Button Text="Sobre" />
-
         <Label 
             Text="Cálculo da Diária"
             FontFamily="Montserrat"
@@ -60,7 +58,8 @@
                 <Label Text="ESCOLHA SUA SUÍTE" />
 
                 <Picker x:Name="pck_suite" 
-                        Title="Selecione sua acomodação"/>
+                        Title="Selecione sua acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 
                 <!-- INSERE UMA NOVA FRAME  PARA ENTRADA DO DATEPICKER-->
@@ -75,18 +74,24 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out"/>
-                            <DatePicker x:Name="dtpck_checkou"
+                            <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/mm/yyyy" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar" 
+                        Margin="10"
+                        Clicked="Button_Clicked"/>
+                
+                <Button Text="Sobre"
+                        Margin="10"/>
 
             </VerticalStackLayout>
         </Frame>
